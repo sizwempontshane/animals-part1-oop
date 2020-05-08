@@ -5,6 +5,9 @@ class Animal{
     eat(){
         console.log(this.name + ' eats');
     }
+    sound(){
+        console.log(sounds);
+    }
 }
 
 class Dog extends Animal{
@@ -32,15 +35,18 @@ var cat = new Cat('Stormy', 'Cat');
 cat.eat();
 cat.sound();
 
-let adoptedPets = [];
+
 
 class Home{
+    constructor(){
+        this.adoptedPets = [];
+    }
     adoptPet(pet){
-        adoptedPets.push(pet);
+        this.adoptedPets.push(pet);
     }
     makeAllSounds(){
-        for (var i = 0; i < adoptedPets.length; i++) {
-            adoptedPets[i].sound();
+        for (var i = 0; i < this.adoptedPets.length; i++) {
+            this.adoptedPets[i].sound();
         }
     }
 }
