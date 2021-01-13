@@ -18,9 +18,6 @@ class Dog extends Animal {
     console.log("Dog barks");
   }
 }
-var dog = new Dog("Rax");
-dog.eat();
-dog.sound();
 
 class Cat extends Animal {
   constructor(name) {
@@ -31,9 +28,7 @@ class Cat extends Animal {
   }
 }
 
-var cat = new Cat("Stormy");
-cat.eat();
-cat.sound();
+
 
 class Home {
   constructor() {
@@ -49,15 +44,4 @@ class Home {
   }
 }
 
-var home = new Home();
-var dog1 = new Dog();
-var dog2 = new Dog();
-var cat = new Cat();
 
-home.makeAllSounds();
-home.adoptPet(dog1);
-home.makeAllSounds();
-home.adoptPet(cat);
-home.makeAllSounds();
-home.adoptPet(dog2);
-home.makeAllSounds();
