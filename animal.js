@@ -5,16 +5,13 @@ class Animal {
   eat() {
     console.log(this.name + " eats");
   }
-  sound() {
-    console.log(sounds);
-  }
 }
 
 class Dog extends Animal {
   constructor(name) {
     super(name);
   }
-  sound() {
+  sounds() {
     console.log("Dog barks");
   }
 }
@@ -23,7 +20,7 @@ class Cat extends Animal {
   constructor(name) {
     super(name);
   }
-  sound() {
+  sounds() {
     console.log("Cat meows");
   }
 }
