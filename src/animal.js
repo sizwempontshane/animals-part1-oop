@@ -36,4 +36,4 @@ class Home {
         }
     }
 }
-module.exports = { Dog, Cat}
+module.exports = {Dog, Cat}
