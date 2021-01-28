@@ -35,7 +35,7 @@ class Home {
     this.adoptedPets.push(pet);
   }
   makeAllSounds() {
-    for (var i = 0; i < this.adoptedPets.length; i++) {
+    for (let i = 0; i < this.adoptedPets.length; i++) {
       console.log(this.adoptedPets[i].sound());
     }
   }
