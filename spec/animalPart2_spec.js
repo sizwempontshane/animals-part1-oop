@@ -37,13 +37,3 @@ describe("Animal", function () {
     expect(cat.sounds()).not.toBe("Barkark");
   });
 });
-
-describe("Home", function () {
-  it("should adopt a pet", function () {
-    expect(home.adoptPet).toBeDefined();
-  });
-
-  it("should make all sounds", function () {
-    expect(home.makeAllSounds).toBeDefined();
-  });
-});
